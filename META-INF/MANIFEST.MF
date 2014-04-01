@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 10.0-b19 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Pre-Sales Functions
+Bundle-SymbolicName: com.ghc.custom.functions;singleton:=true
+Bundle-Version: 1.0.5
+Bundle-Vendor: Pre-Sales
+Import-Package: com.ghc.ghTester.expressions,
+ net.sf.saxon,
+ net.sf.saxon.dom,
+ net.sf.saxon.om
+Bundle-ClassPath: .,
+ lib/jdom.jar,
+ lib/TelnetSupport.jar,
+ lib/j2ssh-ant-0.2.9.jar,
+ lib/j2ssh-common-0.2.9.jar,
+ lib/j2ssh-core-0.2.9.jar,
+ lib/j2ssh-daemon-0.2.9.jar,
+ lib/commons-net-1.4.1.jar,
+ lib/commons-logging-1.1.jar,
+ lib/commons-logging-adapters-1.1.jar,
+ lib/commons-logging-api-1.1.jar,
+ lib/jettison-1.1.jar,
+Require-Bundle: com.ghc.ghTester,
+ com.tibco.ems;bundle-version="1.0.0"
