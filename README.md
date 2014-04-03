@@ -9,4 +9,16 @@ At a source level this repository includes everything needed to compile and use 
 
 We will be adding detailed descriptions of functions over time and hopefully pulling in a few community created examples.
 
-- [FormatDate](#formatdate)
+- [FormatDate]
+- [Concat]
+- [FTP]
+- [SFTP]
+- [FileName]
+- [NumberGenerator]
+- [SSHConnection]
+- [Substring]
+- [TelnetConnection]
+- [ToLower]
+- [ToUpper]
+- [XPathUpdate]
+- [regexReplaceAll]
