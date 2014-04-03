@@ -8,3 +8,5 @@ The goal of this repository is to allow anyone to take these as examples and re-
 At a source level this repository includes everything needed to compile and use these functions and as such it is structured as an Eclipse plugin, the same as you would need to do to write a plugin from scratch.
 
 We will be adding detailed descriptions of functions over time and hopefully pulling in a few community created examples.
+
+- [FormatDate](#formatdate)
