@@ -15,56 +15,23 @@
    <extension
          point="com.ghc.ghTester.functions">
       <function
-            displayName="EqOut"
-            functionClass="com.ghc.custom.functions.eqout"
-            maxParameters="4"
-            minParameters="4"
-            name="eqout"
-            syntax="eqOut( message, expression, expression, logLevel)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="XMLTransformer"
-            functionClass="com.ghc.custom.functions.XMLTransformer"
-            maxParameters="3"
-            minParameters="3"
-            name="XMLTransformer"
-            syntax="XMLTransformer( input XML (file/tag), XmlTransform XSL location (file/tag), XmlTransform result (file/tag)  )">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
             displayName="ToUpper"
-            functionClass="com.ghc.custom.functions.Padding"
+            functionClass="com.ghc.custom.functions.ToUpper"
             maxParameters="1"
             minParameters="1"
             name="ToUpper"
             syntax="ToUpper( value )">
       </function>
    </extension>
-   <extension
+      <extension
          point="com.ghc.ghTester.functions">
       <function
-            displayName="TelnetConnection"
-            functionClass="com.ghc.custom.functions.TelnetConnection"
-            maxParameters="6"
-            minParameters="4"
-            name="TelnetConnection"
-            syntax="TelnetConnection(Host, Username, Password, Command[, StdOutTag, StdErrTag])">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="Split"
-            functionClass="com.ghc.custom.functions.Split"
-            maxParameters="250"
-            minParameters="3"
-            name="Split"
-            syntax="Split(Output Seperator, Input Seperator, Data*)">
+            displayName="ToLower"
+            functionClass="com.ghc.custom.functions.ToLower"
+            maxParameters="1"
+            minParameters="1"
+            name="ToLower"
+            syntax="ToLower( value )">
       </function>
    </extension>
    <extension
@@ -83,98 +50,10 @@
       <function
             displayName="NumberGenerator"
             functionClass="com.ghc.custom.functions.NumberGenerator"
-            maxParameters="1"
+            maxParameters="2"
             minParameters="1"
             name="NumberGenerator"
-            syntax="NumberGenerator( length )">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="Logger"
-            functionClass="com.ghc.custom.functions.Logger"
-            maxParameters="5"
-            minParameters="4"
-            name="Logger"
-            syntax="Logger( file(true/false), message, filename, log level (0,1,2) [, expression])">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="GuidGenerator36Char"
-            functionClass="com.ghc.custom.functions.GuidGenerator36Char"
-            maxParameters="1"
-            minParameters="0"
-            name="GuidGenerator36Char"
-            syntax="GuidGenerator36Char([isSecure])">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="GuidGenerator32Char"
-            functionClass="com.ghc.custom.functions.GuidGenerator32Char"
-            maxParameters="1"
-            minParameters="0"
-            name="GuidGenerator32Char"
-            syntax="GuidGenerator32Char([isSecure])">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="GuidGenerator18Char"
-            functionClass="com.ghc.custom.functions.GuidGenerator18Char"
-            maxParameters="0"
-            minParameters="0"
-            name="GuidGenerator18Char"
-            syntax="GuidGenerator18Char()">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="GUID"
-            functionClass="com.ghc.custom.functions.GUID"
-            maxParameters="0"
-            minParameters="0"
-            name="GUID"
-            syntax="GUID()">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="CSVCreator"
-            functionClass="com.ghc.custom.functions.CSVCreator"
-            maxParameters="255"
-            minParameters="3"
-            name="CSVCreator"
-            syntax="CSVCreator(File, Seperator, Data*)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="Base64Util"
-            functionClass="com.ghc.custom.functions.Base64Util"
-            maxParameters="2"
-            minParameters="2"
-            name="Base64Util"
-            syntax="Base64Util( Encode/Decode, content )">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="AlterNumber"
-            functionClass="com.ghc.custom.functions.AlterNumber"
-            maxParameters="2"
-            minParameters="2"
-            name="AlterNumber"
-            syntax="AlterNumber( input number, value to change by)">
+            syntax="NumberGenerator( length[, filename] )">
       </function>
    </extension>
    <extension
@@ -213,28 +92,6 @@
    <extension
          point="com.ghc.ghTester.functions">
       <function
-            displayName="Power"
-            functionClass="com.ghc.custom.functions.Power"
-            maxParameters="2"
-            minParameters="2"
-            name="Power"
-            syntax="Power(num, num)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="ReadFile"
-            functionClass="com.ghc.custom.functions.ReadFile"
-            maxParameters="1"
-            minParameters="1"
-            name="ReadFile"
-            syntax="ReadFile(fileName)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
             displayName="regexReplaceAll"
             functionClass="com.ghc.custom.functions.regexReplaceAll"
             maxParameters="3"
@@ -263,50 +120,6 @@
             minParameters="3"
             name="Substring"
             syntax="Substring(startIndex, endIndex, text)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="Trim"
-            functionClass="com.ghc.custom.functions.Trim"
-            maxParameters="3"
-            minParameters="3"
-            name="Trim"
-            syntax="Trim(front/back, num chars to trim, text to trim)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="Trim"
-            functionClass="com.ghc.custom.functions.Trim"
-            maxParameters="3"
-            minParameters="3"
-            name="Trim"
-            syntax="Trim(front/back, num chars to trim, text to trim)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="AutoIncrementModel"
-            functionClass="com.ghc.custom.functions.AutoIncrementModel"
-            maxParameters="1"
-            minParameters="1"
-            name="AutoIncrementModel"
-            syntax="AutoIncrementModel( String model)">
-      </function>
-   </extension>
-   <extension
-         point="com.ghc.ghTester.functions">
-      <function
-            displayName="Padding"
-            functionClass="com.ghc.custom.functions.Padding"
-            maxParameters="3"
-            minParameters="3"
-            name="Padding"
-            syntax="Padding( String value, int targetLength, int Z)">
       </function>
    </extension>
    <extension

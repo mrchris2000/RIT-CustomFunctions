@@ -1,26 +1,27 @@
 Manifest-Version: 1.0
-Ant-Version: Apache Ant 1.7.0
-Created-By: 10.0-b19 (Sun Microsystems Inc.)
 Bundle-ManifestVersion: 2
-Bundle-Name: Pre-Sales Functions
-Bundle-SymbolicName: com.ghc.custom.functions;singleton:=true
-Bundle-Version: 1.0.5
-Bundle-Vendor: Pre-Sales
-Import-Package: com.ghc.ghTester.expressions,
- net.sf.saxon,
- net.sf.saxon.dom,
- net.sf.saxon.om
-Bundle-ClassPath: .,
- lib/jdom.jar,
- lib/TelnetSupport.jar,
+Bundle-Name: RIT-CustomFunctions
+Bundle-SymbolicName: RIT-CustomFunctions;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: com.ghc.ghTester
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.ghc.ghTester.expressions
+Created-By: 10.0-b19 (Sun Microsystems Inc.)
+Ant-Version: Apache Ant 1.7.0
+Bundle-ClassPath: lib/avalon-framework-4.1.3.jar,
+ lib/commons-logging-1.1.jar,
+ lib/commons-logging-adapters-1.1.jar,
+ lib/commons-logging-api-1.1.jar,
+ lib/commons-net-1.4.1.jar,
  lib/j2ssh-ant-0.2.9.jar,
  lib/j2ssh-common-0.2.9.jar,
  lib/j2ssh-core-0.2.9.jar,
  lib/j2ssh-daemon-0.2.9.jar,
- lib/commons-net-1.4.1.jar,
- lib/commons-logging-1.1.jar,
- lib/commons-logging-adapters-1.1.jar,
- lib/commons-logging-api-1.1.jar,
+ lib/jdom-1.0.jar,
  lib/jettison-1.1.jar,
-Require-Bundle: com.ghc.ghTester,
- com.tibco.ems;bundle-version="1.0.0"
+ lib/log4j-1.2.12.jar,
+ lib/logkit-1.0.1.jar,
+ lib/oro-2.0.8.jar,
+ lib/servlet-api-2.3.jar,
+ lib/stax-api-1.0.1.jar,
+ .
