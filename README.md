@@ -65,14 +65,15 @@ Convert the specified text to Lower or Upper case respectively.
 Changes a value in an XML file on the path to the value passed in. The node to update can be either an element or an attribute. If you want to update an attribute, just pass <code>null</code> for it and the parser will look just for the matching element name. Not intended to solve every XML update problem, but just handle some of the boilerplate in certain cases.
 
 Examples (In all cases the form is - XPathUpdate(%%TAG_CONTAINING_XML%%, xPath, newValue):
-Update the value of the &quot;name&quot; attribute in the &quot;project&quot; element.
-&quot;/project/@name&quot; 
 
-Update the value of the  &quot;dude&quot; attribute in the last element called &quot;test&quot;.
-&quot;/project/test[last()]/@dude&quot;
+Update the value of the 'name' attribute in the 'project' element - 
+'/project/@name'
 
-Update the value of the  &quot;dude&quot; attribute for all test elements that have an attribute called &quot;price&quot; whose value is greater than 50.00
-&quot;/project/test[@price&gt;50.00]/@dude&quot; 
+Update the value of the 'dude' attribute in the last element called 'test' - 
+'/project/test[last()]/@dude'
+
+Update the value of the  'dude' attribute for all test elements that have an attribute called 'price' whose value is greater than 50.00 - 
+'/project/test[@price>50.00]/@dude' 
 
 ###### regexReplaceAll (Deprecated)
 Replace text matched by the given Regular Expression with the supplied text.
