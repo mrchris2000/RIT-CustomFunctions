@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Format date"
+            functionClass="com.ghc.custom.functions.FormatDate"
+            maxParameters="3"
+            minParameters="2"
+            name="formatDate"
+            syntax="formatDate( date, inputFormat [, outputFormat] )">
+      </function>
+   </extension>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/ToUpper"
+            functionClass="com.ghc.custom.functions.ToUpper"
+            maxParameters="1"
+            minParameters="1"
+            name="ToUpper"
+            syntax="ToUpper( value )">
+      </function>
+   </extension>
+      <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/ToLower"
+            functionClass="com.ghc.custom.functions.ToLower"
+            maxParameters="1"
+            minParameters="1"
+            name="ToLower"
+            syntax="ToLower( value )">
+      </function>
+   </extension>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/SSHConnection"
+            functionClass="com.ghc.custom.functions.SSHConnection"
+            maxParameters="6"
+            minParameters="4"
+            name="SSHConnection"
+            syntax="SSHConnection(Host, Username, Password, Command[, StdOutTag, StdErrTag])">
+      </function>
+   </extension>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/NumberGenerator"
+            functionClass="com.ghc.custom.functions.NumberGenerator"
+            maxParameters="2"
+            minParameters="1"
+            name="NumberGenerator"
+            syntax="NumberGenerator( length[, filename] )">
+      </function>
+   </extension>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/Concat"
+            functionClass="com.ghc.custom.functions.Concat"
+            maxParameters="2"
+            minParameters="2"
+            name="Concat"
+            syntax="concat( string, string)">
+      </function>
+   </extension>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/FileName"
+            functionClass="com.ghc.custom.functions.FileName"
+            maxParameters="2"
+            minParameters="2"
+            name="fileName"
+            syntax="fileName(dirPath, nthFile)">
+      </function>
+   </extension>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/FTP"
+            functionClass="com.ghc.custom.functions.FTP"
+            maxParameters="6"
+            minParameters="6"
+            name="FTP"
+            syntax="FTP(hostname, username, password, command, local, remote)">
+      </function>
+   </extension>
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/regexReplaceAll"
+            functionClass="com.ghc.custom.functions.regexReplaceAll"
+            maxParameters="3"
+            minParameters="3"
+            name="regexReplaceAll"
+            syntax="regexReplaceAll(regexPattern, replacementString, inputString)">
+      </function>
+   </extension> 
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/SFTP"
+            functionClass="com.ghc.custom.functions.SFTP"
+            maxParameters="6"
+            minParameters="6"
+            name="SFTP"
+            syntax="SFTP(hostname, username, password, command, local, remote)">
+      </function>
+   </extension>   
+   <extension
+         point="com.ghc.ghTester.functions">
+      <function
+            displayName="Community/Substring"
+            functionClass="com.ghc.custom.functions.Substring"
+            maxParameters="3"
+            minParameters="3"
+            name="Substring"
+            syntax="Substring(startIndex, endIndex, text)">
+      </function>
+   </extension>
+   <extension
+		 point="com.ghc.ghTester.functions">
+	  <function
+			displayName="Community/xpathUpdate"
+			functionClass="com.ghc.custom.functions.XPathUpdate"
+			maxParameters="3"
+			minParameters="3"
+			name="xpathUpdate"
+			syntax="xpathUpdate( fileContentTag, xPathExpression, valueToReplace )">
+	  </function>
+   </extension>
+   <!-- -->
+   <extension
+           point="com.ghc.ghTester.functions">
+      <function
+              displayName="Custom/Authorization Encode"
+              functionClass="com.ghc.custom.functions.AuthEncode"
+              maxParameters="2"
+              minParameters="2"
+              name="AuthEncode"
+              syntax="AuthEncode(user id, password)">
+      </function>
+      <function
+              displayName="Custom/Base64 Encode"
+              functionClass="com.ghc.custom.functions.Base64Encode"
+              maxParameters="1"
+              minParameters="1"
+              name="Base64Encode"
+              syntax="Base64Encode(text)">
+      </function>
+      <function
+              displayName="Custom/Concat"
+              functionClass="com.ghc.custom.functions.Concat"
+              maxParameters="2"
+              minParameters="2"
+              name="Concat"
+              syntax="Concat(text1, text2)">
+      </function>
+      <function
+              displayName="Custom/Execute Suite"
+              functionClass="com.ghc.custom.functions.ExecSuite"
+              maxParameters="3"
+              minParameters="3"
+              name="ExecSuite"
+              syntax="ExecSuite(%%PROJECT/ROOT_DIRECTORY%%, %%SUITE/NAME%%, %%ENVIRONMENT/NAME%%)">
+      </function>
+      <function
+              displayName="Custom/File Name"
+              functionClass="com.ghc.custom.functions.FileName"
+              maxParameters="2"
+              minParameters="2"
+              name="FileName"
+              syntax="FileName(dirPath, nthFile)">
+      </function>
+      <function
+              displayName="Custom/Format Date"
+              functionClass="com.ghc.custom.functions.FormatDate"
+              maxParameters="3"
+              minParameters="3"
+              name="FormatDate"
+              syntax="FormatDate(date, inputFormat, outputFormat)">
+      </function>
+      <function
+              displayName="Custom/Format Number"
+              functionClass="com.ghc.custom.functions.FormatNbr"
+              maxParameters="2"
+              minParameters="2"
+              name="FormatNbr"
+              syntax="FormatNbr(Number, Format)">
+      </function>
+      <function
+              displayName="Custom/Get Password"
+              functionClass="com.ghc.custom.functions.GetPassword"
+              maxParameters="0"
+              minParameters="0"
+              name="GetPassword"
+              syntax="GetPassword()">
+      </function>
+      <function
+              displayName="Custom/Get Passwords"
+              functionClass="com.ghc.custom.functions.GetPasswords"
+              maxParameters="1"
+              minParameters="0"
+              name="GetPasswords"
+              syntax="GetPasswords(Password Key)">
+      </function>
+      <function
+              displayName="Custom/Ghost ID Maintenance"
+              functionClass="com.ghc.custom.functions.GhostIDMaint"
+              maxParameters="0"
+              minParameters="0"
+              name="GhostIDMaint"
+              syntax="GhostIDMaint()">
+      </function>
+      <function
+              displayName="Custom/Length"
+              functionClass="com.ghc.custom.functions.Len"
+              maxParameters="1"
+              minParameters="1"
+              name="Len"
+              syntax="Len(text)">
+      </function>
+      <function
+              displayName="Custom/Length Greater Than Zero"
+              functionClass="com.ghc.custom.functions.LGTZ"
+              maxParameters="1"
+              minParameters="1"
+              name="LGTZ"
+              syntax="LGTZ(text)">
+      </function>
+      <function
+              displayName="Custom/ListsToCsv"
+              functionClass="com.ghc.custom.functions.ListsToCsv"
+              maxParameters="998"
+              minParameters="1"
+              name="ListsToCsv"
+              syntax="ListsToCsv(list, ...)">
+      </function>
+      <function
+              displayName="Custom/Log Pieces"
+              functionClass="com.ghc.custom.functions.LogPieces"
+              maxParameters="3"
+              minParameters="3"
+              name="LogPieces"
+              syntax="LogPieces(Text, Line Length, FileName)">
+      </function>
+      <function
+              displayName="Custom/MakePath"
+              functionClass="com.ghc.custom.functions.MkPath"
+              maxParameters="1"
+              minParameters="1"
+              name="MkPath"
+              syntax="MkPath(path)">
+      </function>
+      <function
+              displayName="Custom/MoveFile"
+              functionClass="com.ghc.custom.functions.MoveFile"
+              maxParameters="3"
+              minParameters="2"
+              name="MoveFile"
+              syntax="MoveFile(from, to)">
+      </function>
+      <function
+              displayName="Custom/NamedListsToCsv"
+              functionClass="com.ghc.custom.functions.NamedListsToCsv"
+              maxParameters="998"
+              minParameters="2"
+              name="NamedListsToCsv"
+              syntax="NamedListsToCsv(name, list, ...)">
+      </function>
+      <function
+              displayName="Custom/PickAPiece"
+              functionClass="com.ghc.custom.functions.PickAPiece"
+              maxParameters="3"
+              minParameters="3"
+              name="PickAPiece"
+              syntax="PickAPiece(nbrOfItems, item, text)">
+      </function>
+      <function
+              displayName="Custom/Prepend"
+              functionClass="com.ghc.custom.functions.Prepend"
+              maxParameters="2"
+              minParameters="2"
+              name="Prepend"
+              syntax="Prepend(Text, Length)">
+      </function>
+      <function
+              displayName="Custom/PrependX"
+              functionClass="com.ghc.custom.functions.PrependX"
+              maxParameters="3"
+              minParameters="3"
+              name="PrependX"
+              syntax="PrependX(Text, Pad Char, Length)">
+      </function>
+      <function
+              displayName="Custom/Read User"
+              functionClass="com.ghc.custom.functions.ReadUser"
+              maxParameters="2"
+              minParameters="2"
+              name="ReadUser"
+              syntax="ReadUser(File, ReadOption)">
+      </function>
+      <function
+              displayName="Custom/RegEx Replace All"
+              functionClass="com.ghc.custom.functions.RegExReplaceAll"
+              maxParameters="3"
+              minParameters="3"
+              name="RegExReplaceAll"
+              syntax="RegExReplaceAll(regex, replaceWith, text)">
+      </function>
+      <function
+              displayName="Custom/Report Execution"
+              functionClass="com.ghc.custom.functions.ReportExec"
+              maxParameters="2"
+              minParameters="2"
+              name="ReportExec"
+              syntax="ReportExec(tags[&quot;SYSTEM/USER_NAME&quot;], tags[&quot;SUITE/NAME&quot;])">
+      </function>
+      <function
+              displayName="Custom/ResultsWriter"
+              functionClass="com.ghc.custom.functions.ResultsWriter"
+              maxParameters="2"
+              minParameters="2"
+              name="ResultsWriter"
+              syntax="ResultsWriter(ResultSet, FileName)">
+      </function>
+      <function
+              displayName="Custom/Screen Log"
+              functionClass="com.ghc.custom.functions.ScreenLog"
+              maxParameters="2"
+              minParameters="2"
+              name="ScreenLog"
+              syntax="ScreenLog(Text, FileName)">
+      </function>
+      <function
+              displayName="Custom/Scrutinize"
+              functionClass="com.ghc.custom.functions.Scrutinize"
+              maxParameters="2"
+              minParameters="2"
+              name="Scrutinize"
+              syntax="Scrutinize(text1, text2)">
+      </function>
+      <function
+              displayName="Custom/Send Mail"
+              functionClass="com.ghc.custom.functions.SendMail"
+              maxParameters="3"
+              minParameters="3"
+              name="SendMail"
+              syntax="SendMail(Recipients, Subject, Message)">
+      </function>
+      <function
+              displayName="Custom/SetLen"
+              functionClass="com.ghc.custom.functions.SetLen"
+              maxParameters="2"
+              minParameters="2"
+              name="SetLen"
+              syntax="SetLen(Text, Length)">
+      </function>
+      <function
+              displayName="Custom/SetLenX"
+              functionClass="com.ghc.custom.functions.SetLenX"
+              maxParameters="3"
+              minParameters="3"
+              name="SetLenX"
+              syntax="SetLenX(Text, Pad Char, Length)">
+      </function>
+      <function
+              displayName="Custom/Set List Passwords"
+              functionClass="com.ghc.custom.functions.SetListPasswords"
+              maxParameters="1"
+              minParameters="1"
+              name="SetListPasswords"
+              syntax="SetListPasswords(List File Path)">
+      </function>
+      <function
+              displayName="Custom/Set Password File Location"
+              functionClass="com.ghc.custom.functions.SetPasswordFileLocation"
+              maxParameters="0"
+              minParameters="0"
+              name="SetPasswordFileLocation"
+              syntax="SetPasswordFileLocation()">
+      </function>
+      <function
+              displayName="Custom/Set Passwords"
+              functionClass="com.ghc.custom.functions.SetPasswords"
+              maxParameters="0"
+              minParameters="0"
+              name="SetPasswords"
+              syntax="SetPasswords()">
+      </function>
+      <function
+              displayName="Custom/Space"
+              functionClass="com.ghc.custom.functions.Space"
+              maxParameters="0"
+              minParameters="0"
+              name="Space"
+              syntax="Space()">
+      </function>
+      <function
+              displayName="Custom/Spaces"
+              functionClass="com.ghc.custom.functions.Spaces"
+              maxParameters="1"
+              minParameters="1"
+              name="Spaces"
+              syntax="Spaces(Length)">
+      </function>
+      <function
+              displayName="Custom/Stack"
+              functionClass="com.ghc.custom.functions.Stack"
+              maxParameters="2"
+              minParameters="2"
+              name="Stack"
+              syntax="Stack(Existing, Append)">
+      </function>
+      <function
+              displayName="Custom/StrInt"
+              functionClass="com.ghc.custom.functions.StrInt"
+              maxParameters="1"
+              minParameters="1"
+              name="StrInt"
+              syntax="StrInt(IntegerValue)">
+      </function>
+      <function
+              displayName="Custom/Substr"
+              functionClass="com.ghc.custom.functions.Substr"
+              maxParameters="3"
+              minParameters="3"
+              name="Substr"
+              syntax="Substr(start, end, text)">
+      </function>
+      <function
+              displayName="Custom/TestTags"
+              functionClass="com.ghc.custom.functions.TestTags"
+              maxParameters="1"
+              minParameters="1"
+              name="TestTags"
+              syntax="TestTags(fileIn, xpathExpression, newValue)">
+      </function>
+      <function
+              displayName="Custom/TestTagStore"
+              functionClass="com.ghc.custom.functions.TestTagStore"
+              maxParameters="1"
+              minParameters="1"
+              name="TestTagStore"
+              syntax="TestTagStore(test)">
+      </function>
+      <function
+              displayName="Custom/To Lower"
+              functionClass="com.ghc.custom.functions.ToLower"
+              maxParameters="1"
+              minParameters="1"
+              name="ToLower"
+              syntax="ToLower(text)">
+      </function>
+      <function
+              displayName="Custom/To Upper"
+              functionClass="com.ghc.custom.functions.ToUpper"
+              maxParameters="1"
+              minParameters="1"
+              name="ToUpper"
+              syntax="ToUpper(text)">
+      </function>
+      <function
+              displayName="Custom/Trim"
+              functionClass="com.ghc.custom.functions.Trim"
+              maxParameters="1"
+              minParameters="1"
+              name="Trim"
+              syntax="Trim(text)">
+      </function>
+      <function
+              displayName="Custom/Unpack Data"
+              functionClass="com.ghc.custom.functions.UnpackData"
+              maxParameters="2"
+              minParameters="2"
+              name="UnpackData"
+              syntax="UnpackData(data, decimal point location)">
+      </function>
+      <function
+              displayName="Custom/Update Password"
+              functionClass="com.ghc.custom.functions.UpdatePassword"
+              maxParameters="0"
+              minParameters="0"
+              name="UpdatePassword"
+              syntax="UpdatePassword()">
+      </function>
+      <function
+              displayName="Custom/XPath Update"
+              functionClass="com.ghc.custom.functions.XPathUpdate"
+              maxParameters="3"
+              minParameters="3"
+              name="XPathUpdate"
+              syntax="XPathUpdate(inputXML, xpath, value)">
+      </function>
+      <function
+              displayName="Custom/ZS"
+              functionClass="com.ghc.custom.functions.ZS"
+              maxParameters="1"
+              minParameters="1"
+              name="ZS"
+              syntax="ZS(value)">
+      </function>
+   </extension>
+</plugin>
