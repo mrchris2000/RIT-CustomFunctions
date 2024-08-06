@@ -7,7 +7,7 @@ The goal of this repository is to allow anyone to take these as examples and re-
 
 Important: You will need to add a local maven repository yourself in order to compile the custom functions. This repository simply contains the RIT jar file that is required for build purposes. We cannot distribute this, but if you have a copy of the software you can create the local repository using Maven like so:
 
-mvn deploy:deploy-file -Durl=file:///f:/GitHub/RIT-CustomFunctions/repo/ -Dfile=com.ghc.ghTester_1.1052.0.202303090223.jar -DgroupId=com.ibm.rit -DartifactId=expressions -Dpackaging=jar -Dversion=1.0
+mvn deploy:deploy-file -Durl="file:///f:/GitHub/RIT-CustomFunctions/repo/" -Dfile="com.ghc.ghTester_1.1052.0.202303090223.jar" -DgroupId="com.ibm.rit" -DartifactId=expressions -Dpackaging=jar -Dversion="1.0"
 
 On a Windows PC if you run the above command from: C:\Program Files\IBM\IBMIMShared\plugins
 Things should work correctly. Obviously you will want to change the output path, and as new versions of RIT are released the actual jar file version number will change, but you get the idea.
@@ -16,13 +16,18 @@ If you leave the /repo on the end of the path so that the repo folder is created
 In order to check that it is working simply run:
 mvn clean package
 
-In the 'target' folder you will then find a 'CustomFunctions.jar' file which can be dropped into a projects 'Functions' folder and used normally.
+In the 'target' folder you will then find a 'CommunityCustomFunctions.jar' file which can be dropped into a projects 'Functions' folder and used normally.
 
 ### What's included?
 At a source level this repository includes everything needed to compile and use these functions and as such it is structured as an Eclipse plugin, the same as you would need to do to write a plugin from scratch.
 
 We will be adding detailed descriptions of functions over time and hopefully pulling in a few community created examples.
 Where there is built in functionality in the product the function will marked '(Deprecated)', I am leaving them in here so as not to break projects that may use these functions.
+
+There are now two folders displayed in the functions selector, one called 'Presales' and one called 'Community'.
+Presales submitted functions are provided by the presales team here; they still come with no warranty, but are known to be used in several deployments.
+Community submitted functions are provided by community contributors and likely only exist in their deployment and one or two others.
+Presales functions are described below.
 
 ###### FormatDate
 The example date formatter provided with the product in the 'Examples' folder.
